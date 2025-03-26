@@ -70,3 +70,17 @@ account_info = response.json()
 
 print(json.dumps(account_info,indent=2))
 
+endpoint = '/api/v3/avgPrice'
+timestamp = int(time.time() * 1000)
+
+query_string = f'timestamp={timestamp}&symbol=BNBUSDT'
+signature = hmac.new(secret_key.encode(), query_string.encode(), hashlib.sha256).hexdigest()
+
+headers = {
+    'X-MBX-APIKEY': api_key
+}
+
+url = f'{base_url}{endpoint}?{query_string}&signature={signature}'
+print(url)
+response = requests.get(url, headers=headers)
+account_info = response.json()
