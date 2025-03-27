@@ -35,6 +35,11 @@ Certifique-se de que o arquivo `.config` está configurado corretamente com suas
 
 ## Uso
 
+Carregue as variáveis de ambiente:
+```bash
+. .config.env
+```
+
 Execute o programa principal:
 ```bash
 python main.py

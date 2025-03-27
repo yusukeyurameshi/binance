@@ -1,0 +1,12 @@
+# Arquivos de imagem
+*.png
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+venv/
+env/
+.env 
