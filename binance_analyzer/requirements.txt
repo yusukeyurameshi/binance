@@ -1,0 +1,6 @@
+cx_Oracle==8.3.0
+requests==2.31.0
+python-binance==1.0.19
+pandas==2.1.4
+matplotlib==3.8.2
+oci==2.118.0 
